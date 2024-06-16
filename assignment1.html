@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Information Form</title>
+</head>
+<body>
+
+<h2>User Information</h2>
+
+<form action="submit.php" method="post">
+    <label for="username">Name:</label>
+    <input type="text" id="username" name="username" required><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="UK">UK</option>
+        <option value="Australia">Australia</option>
+        <option value="Japan">Japan</option>
+        <option value="India">India</option>
+        <!-- Add more options as needed -->
+    </select><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
